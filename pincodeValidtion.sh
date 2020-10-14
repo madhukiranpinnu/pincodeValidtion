@@ -3,9 +3,10 @@
 echo "welcome to pincodevalidation progarm"
 
 ##program to accept 6 digits
+##not to accept alphabet
 read -p "enter pincode: " pincode
 
-pattern='[0-9]{6}'
+pattern='^[0-9]{6}'
 
 if [[ $pincode =~ $pattern ]]
 then
